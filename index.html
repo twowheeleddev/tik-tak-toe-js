@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="vanta-bg"></div>
+    <div class="controls">
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="container">
+      <div class="scoreboard">
+        <div>
+          <h2>You</h2>
+          <span id="userScore">0</span>
+        </div>
+        <div>
+          <h2>Bot</h2>
+          <span id="botScore">0</span>
+        </div>
+      </div>
+
+      <div class="hands">
+        <div class="hand user">
+          <img src="images/rock.png" alt="Your hand" />
+        </div>
+        <div class="hand bot"><img src="images/rock.png" alt="Bot hand" /></div>
+      </div>
+
+      <div class="result">Choose your move</div>
+
+      <div class="options">
+        <div class="choice" data-choice="R">
+          <img src="images/rock.png" alt="Rock" />
+          <p class="label">Rock</p>
+        </div>
+        <div class="choice" data-choice="P">
+          <img src="images/paper.png" alt="Paper" />
+          <p class="label">Paper</p>
+        </div>
+        <div class="choice" data-choice="S">
+          <img src="images/scissors.png" alt="Scissors" />
+          <p class="label">Scissors</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
